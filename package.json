@@ -12,7 +12,7 @@
   "main": "./lib/brov-app.js",
   
   "bin": {
-    "brov-app": "./bin/brov-app.js"
+    "brov-app": "./bin/brov-app-cli.js"
   },
   
   "repository": {
