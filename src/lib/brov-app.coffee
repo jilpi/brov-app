@@ -1,4 +1,9 @@
-Bus = require('../../brov-bus/')
+# TODO: FIX DEPENDENCIES
+try
+  Bus = require('@jilpi/brov-bus')
+catch
+  Bus = require('../../brov-bus')
+
 
 bus = new Bus 'zmq', 'blueROV-bus'
 
@@ -18,22 +23,9 @@ bus.registerSubscriber ((msg)->
 bus.registerSubscriber ((msg)->
   console.log "TOTO filter: #{msg.toString()}")
   , ["TOTO"]
-  
-pub.send("TEST 1")
-pub.send("TOTO 2")
-pub.send("TITI 3")
 
 
-# availableDevices = [
-#   dummyDevice1:
-#     model: 'tagadasinger'
-#     id: 'tagadasinger-1'
-#   dummyDevice2:
-#     model: 'tagadasinger'
-#     id: 'tagadasinger-2'
-#   dummyDevice3:
-#     model: 'tagadalistener'
-#     id: 'tagadalistener-1'
-# ]
-
-# bus.registerDevices availableDevices
+pub.send("TEST", "1")
+pub.send("TOTO", "2")
+pub.send("TITI", "3")
+pub.send("", "4")

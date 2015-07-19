@@ -24,8 +24,7 @@
   ],
   
   "dependencies": {
-    #"events": "*"
-    "zmq": "*"
+    "@jilpi/brov-bus": "jilpi/brov-bus"
   },
   
   "devDependencies": {
