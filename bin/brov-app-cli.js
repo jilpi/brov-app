@@ -16,5 +16,5 @@
     return
   }
   
-  require '../lib/brov-app.js'
+  require('../lib/brov-app.js')
 }
