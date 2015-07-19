@@ -5,13 +5,14 @@
   "author": "Jean-Laurent Picard <jean.laurent.picard@gmail.com>",
 
   "directories": {
-    "lib": "./lib"
+    "lib": "./lib",
+    "bin": "./bin"
   },
 
   "main": "lib/brov-app",
   
   "bin": {
-    "brov-app": "lib/brov-app.js"
+    "brov-app": "bin/brov-app"
   },
   
   "repository": {
