@@ -6,11 +6,10 @@
 
   "directories": {
     "bin": "./bin",
-    "lib": "./lib",
     "lib": "./lib"
   },
 
-  "main": "./lib/brov-app.js"
+  "main": "./lib/brov-app.js",
   
   "bin": {
     "brov-app": "./bin/brov-app.js"
