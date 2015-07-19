@@ -1,6 +1,6 @@
 {
   "name": "@jilpi/brov-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Main application for the BlueROV",
   "author": "Jean-Laurent Picard <jean.laurent.picard@gmail.com>",
 
@@ -41,7 +41,7 @@
   },
 
   "scripts": {
-    "prepublish": "make generatejs"
+    "prepublish": "make generate-js"
   },
 
   "preferGlobal": false,

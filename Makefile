@@ -14,7 +14,7 @@ deps:
 
 publish: generate-js
 	@test `which npm` || echo 'You need npm to do npm publish... makes sense?'
-	npm publish
+	npm publish --access=public
 	@remove-js
 
 link: generate-js
@@ -24,4 +24,5 @@ link: generate-js
 
 dev: generate-js
 	@coffee -wc -o lib src/lib/*.coffee
-#	@coffee -wc --no-wrap -o lib src/lib/*.coffee
+
+.PHONY: all
