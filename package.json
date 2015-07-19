@@ -6,7 +6,7 @@
 
   "directories": {
     "bin": "./bin",
-    "lib": "./lib",
+    "lib": "./lib"
   },
   
   "bin": {
