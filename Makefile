@@ -1,10 +1,10 @@
 # Makefile inspired from https://github.com/technoweenie/coffee-resque/blob/master/Makefile
 
 generate-js: deps
-	@find src/lib -name '*.coffee' | xargs coffee -c -o lib
+	@find src/bin -name '*.coffee' | xargs coffee -c -o bin
 
 remove-js:
-	@rm -fr lib/
+	@rm -fr bin/
 
 deps:
 	@test `which coffee` || echo 'You need to have CoffeeScript in your PATH.\nPlease install it using `brew install coffee-script` or `npm install coffee-script`.'
@@ -23,5 +23,5 @@ link: generate-js
 	@remove-js
 
 dev: generate-js
-	@coffee -wc -o lib src/lib/*.coffee
-#	@coffee -wc --no-wrap -o lib src/lib/*.coffee
+	@coffee -wc -o bin src/bin/*.coffee
+#	@coffee -wc --no-wrap -o bin src/bin/*.coffee
