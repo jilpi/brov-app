@@ -5,7 +5,7 @@
   "author": "Jean-Laurent Picard <jean.laurent.picard@gmail.com>",
 
   "bin": {
-    "brov-app": "./lib/brov-app.js"
+    "brov-app": "./bin/brov-app.sh"
   },
   
   "repository": {
