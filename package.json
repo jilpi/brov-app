@@ -28,7 +28,7 @@
   },
   
   "devDependencies": {
-    "coffee-script"
+    "coffee-script": "*"
   },
 
   "scripts": {
