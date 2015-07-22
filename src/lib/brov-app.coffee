@@ -8,7 +8,7 @@ catch
 bus = new Bus 'zmq', 'blueROV-bus'
 
 # Create and bind a publisher
-pub = bus.registerPublisher()
+pub = bus.getPublisher()
 
 # Create and bind 4 diffent subscribers (for test purpose)
 bus.registerSubscriber ((err, filter, message)->
