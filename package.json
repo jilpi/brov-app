@@ -33,7 +33,7 @@
   ],
   
   "dependencies": {
-    "@jilpi/brov-bus": "jilpi/brov-bus"
+    "@jilpi/brov-bus": "jilpi/brov-bus",
     "coffee-script": "*"
   },
   
